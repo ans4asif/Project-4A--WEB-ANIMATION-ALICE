@@ -75,23 +75,23 @@ const {ref:spriteFrames, getAnimation:spriteFrames1}=useWebAnimations({
 })
 
 // error-can not run updatePlaybackRate of undefined
-const updateRate=()=>{
-  const b1=background1();
-  const f1=foreground1();
-  const alice=spriteFrames1();
+// const updateRate=()=>{
+//   const b1=background1();
+//   const f1=foreground1();
+//   const alice=spriteFrames1();
 
-  if(alice.playbackRate < .8){
-    b1.updatePlaybackRate(b1.playbackRate/2 *-1);
-    f1.updatePlaybackRate(f1.playbackRate/2 *-1);
-  }
-  else if (alice.playbackRate > 1.2){
-       alice.updatePlaybackRate(alice.playbackRate/2);
-  }
-  else {
-    b1.updatePlaybackRate(b1.playbackRate *0);
-    f1.updatePlaybackRate(f1.playbackRate *0);
-  }
-}
+//   if(alice.playbackRate < .8){
+//     b1.updatePlaybackRate(b1.playbackRate/2 *-1);
+//     f1.updatePlaybackRate(f1.playbackRate/2 *-1);
+//   }
+//   else if (alice.playbackRate > 1.2){
+//        alice.updatePlaybackRate(alice.playbackRate/2);
+//   }
+//   else {
+//     b1.updatePlaybackRate(b1.playbackRate *0);
+//     f1.updatePlaybackRate(f1.playbackRate *0);
+//   }
+// }
 
 
 const speedUp=()=>{
